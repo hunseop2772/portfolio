@@ -19,7 +19,7 @@
         </div>
         <ul class="navbar__menue">
             <li class="navbar__menue__item active" >Home</li>
-            <li class="navbar__menue__item">Profile 내 소개</li>
+            <li class="navbar__menue__item">Profile</li>
             <li class="navbar__menue__item">Skills</li>
             <li class="navbar__menue__item">Projects </li>
             <li class="navbar__menue__item">Recommend</li>
@@ -36,7 +36,7 @@
      <!-- Home start -->
      <section id="home">
         <div class ="home__container">
-        <img src="./images/Yellow_Green_Illustrated_Smart_Boy_Emoji_T-Shirt_-removebg-preview.png" alt="Song's photo" class="home__avatar">
+        <img src="./images/제목_없는_디자인__2_-removebg-preview.png" alt="Song's photo" class="home__avatar">
         <h1 class="home__title">안녕하세요 송훈섭입니다.</h1>
         <h2 class="home__description">저는 짱입니다</h2>
         <button class="home__contact">연락주세요</button>
@@ -45,15 +45,16 @@
     <!-- Home end -->
    
     <!-- My Profile start-->
-    <section id ="about" class ="section__container">
+    <section id ="about" class ="section section__container">
         <h1>Profile</h1>
         <p>
-            profile
-
+            기술
         </p>
-        <div class="majors">
-            <div class="major__icon">
-                <i class="fa-brands fa-html5"></i>
+
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fa-brands fa-html5"></i>
             </div>
             <h2 class="major__title">Front-end</h2>
             <div class="major__descriptiopn">
@@ -62,7 +63,7 @@
             </div>
         </div>
 
-        <div class="majors">
+        <div class="major">
             <div class="major__icon">
               <i class="fa-solid fa-server"></i>
             </div>
@@ -73,7 +74,7 @@
             </div>
         </div>
 
-        <div class="majors">
+        <div class="major">
             <div class="major__icon">
                 <i class="fa-solid fa-mobile-screen"></i>
             </div>
@@ -83,33 +84,65 @@
                 Swift, Kotlin
             </div>
         </div>
+    </div>
 
         <div class="about__jobs">
             <div class="job">
-                <img src="./images/한국.png" alt="한국연구재단">
-                <div class="job_description">
-                <p class="job_name">
-                    인턴
+                <img src="./images/대학.jpg" alt="한밭대학교/정보통신공학과">
+                <div class="job__description">
+                <p class="job__name">
+                    한밭대학교/정보통신공학과 졸업
                 </p>
-                <p class="job_period">
-                        2xxxxx~2xxxxxxx
+                <p class="job__period">
+                        2016.03~2020.2
                 </p>
                 </div>
             </div>
-        </div>
-        <div class="about__jobs">
+        
+
+        <div class="jobs">
             <div class="job">
-                <img src="./images/한국.png" alt="한국연구재단">
-                <div class="job_description">
-                <p class="job_name">
-                    인턴
+                <img src="./images/한국연구.jpg" alt="한국연구재단">
+                <div class="job__description">
+                <p class="job__name">
+                    한국연구재단/원자력연구팀 국비지원 인턴
                 </p>
-                <p class="job_period">
-                        2xxxxx~2xxxxxxx
+                <p class="job__period">
+                        2019.12~2020.02
                 </p>
                 </div>
             </div>
         </div>
+
+        <div class="jobs">
+            <div class="job">
+                <img src="./images/군대.jpg" alt="군대">
+                <div class="job__description">
+                <p class="job__name">
+                    통신소대장 겸 본부중대장
+                </p>
+                <p class="job__period">
+                        2020.02~2022.06
+                </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="jobs">
+            <div class="job">
+                <img src="./images/대학원.jpg" alt="대학원">
+                <div class="job__description">
+                <p class="job__name">
+                    아주대 정보통신대학원/지능형소프트웨어 학과
+                </p>
+                <p class="job__period">
+                        2020.6~2023.2
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     </section>
     <!-- My Profile end-->
 
@@ -118,11 +151,14 @@
         <div class =section__container>
             <h1>기술</h1>
             <h2>소개</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nostrum vitae earum, voluptate, sit non modi animi laboriosam veritatis quo hic fuga laudantium natus asperiores omnis fugiat incidunt dolorem reprehenderit!
+            <p>역량의 전문성에 따라 상 · 중 · 하 수준으로 분류하였습니다. 각 항목을 누르면 상세 내용을 확인할 수 있습니다
             </p>
             <div class="skillset">
                 <div class="skill__left">
+                    <br>
+                    <br>
                     <h3 class="skillset__title">language</h3>
+                    <br>
                     <div class="skill">
                         <div class="skill__description">
                             <span>HTML</span>
@@ -181,7 +217,8 @@
 
                 <div class="skillset__right">
                     <div class="tools">
-                        <h3 class="skillset__title">Tools</h3>
+                        <br>
+                        <h3 class="skillset__title">Tools</h3>                 
                         <ul class="tools__list">
                             <li><span>Visual Studio Code</span> </li>
                             <li><span>IntelliJ</span> </li>
@@ -191,8 +228,10 @@
                             <li><span>Visual Studio</span> </li>
                         </ul>
                     </div>
+                    <br>
                     <div class="etc">
                         <h3 class="skillset__title">Etc</h3>
+                        <br>
                         <li><span>Math</span></li>
                         <li><span>Run</span></li>
                         <li><span>Music</span></li>
@@ -231,7 +270,7 @@
                         <span>Clone coding 아주 비슷함</span>
                     </div>
                     </a>
-                    <a href="" class="project" target="_blank">
+                    <!-- <a href="" class="project" target="_blank">
                         <img src="./images/포플1.png" alt="IOT" class="project__img">
                     <div class="project__description">
                         <h3>제주항공 클론코딩</h3>
@@ -293,7 +332,7 @@
                         <h3>네이버 클론코딩</h3>
                         <span>Clone coding 아주 비슷함</span>
                     </div>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </section>

@@ -9,7 +9,7 @@
     --color-white : #ffffff;
     --color-black : #000000;
     --color-backg : #383838;
-    --color-asd : ;
+    --color-asd : gray;
 
     --font-large : 48px;
     --font-medium : 28px;
@@ -137,7 +137,7 @@ p{
 }
 
 .home__contact {
-    color: var(--color-white);
+    color: var(--color-black);
     font-size: var(--font-regular);
     font-weight: bold;
     margin: 24px;
@@ -146,3 +146,62 @@ p{
     border-radius: var(--size-border-radius);
 
 }
+
+.section {
+    padding: 50px;
+    text-align: center;
+    margin: auto;
+}
+
+.section__container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about__majors{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.major__icon {
+    width: 170px;
+    height: 170px;
+    line-height: 170px;
+    font-size: 70px;
+    margin: auto;
+    color: gray;
+    border: 1px solid ;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.about__jobs{
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.job > img {
+    width: 50%;
+    height: 80px;
+    font-size: 70px;
+    margin: auto;
+    color: gray;  
+    margin: 50px;
+}
+
+.major__icon i {
+    transform: all var(--animation-duration) ease ;
+}
+
+.major__icon:hover i {
+    color: black;
+    transform: rotate(-30deg) scale(1.1);
+}
+
+/* .job > img {
+    width: 300px;
+    height: 80px;
+} */
