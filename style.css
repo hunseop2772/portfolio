@@ -176,21 +176,26 @@ p{
     margin-bottom: 16px;
 }
 
+
 .about__jobs{
-    
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 80px 0;
+    
 }
 
 .job > img {
-    width: 50%;
+    border: 1px solid ;
+    width: 50%px;
     height: 80px;
-    font-size: 70px;
+    font-size: 60px;
     margin: auto;
     color: gray;  
-    margin: 50px;
+    margin: 70px;
+    
 }
+
+
 
 .major__icon i {
     transform: all var(--animation-duration) ease ;
