@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'twayair';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
@@ -11,223 +12,6 @@
     --color-backg : #383838;
     --color-asd : gray;
     --color-orange :#feb546;
-
-    --font-large : 48px;
-    --font-medium : 28px;
-    --font-regular:18px;
-    --font-small:16px;
-    --font-micro:14px;
-
-    --size-border-radius :4px;
-    --animation-duration:300ms;
-}
-
-*{box-sizing: border-box;}
-
-body{
-    font-family: 'twayair', sans-serif;
-    margin:0;
-}
-
-a{
-    text-decoration: none;
-    color: var(--color-white);
-}
-
-ul{
-    padding-left: 0;
-}
-
-li{
-    list-style: none;
-}
-
-button {
-    background-color: var(--color-white);
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
-
-h1 {
-    font-size: var(--font-large);
-    font-weight: bold;
-    color: var(--color-black);
-    margin: 16px 0px;
-}
-h2 {
-    font-size: var(--font-medium);
-    color: var(--color-black);
-    margin: 8px 0px;
-}
-h3 {
-    font-size: var(--font-regular);
-    font-weight: bold;
-    color: var(--color-black);
-    margin: 8px 0px;
-}
-
-p{
-    font-size: var(--font-regular);
-    color: var(--color-black);
-    margin: 4px 0;
-}
-
-/* Navbar */
-
-#navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px;
-    background-color: var(--color-backg);
-}
-
-.navbar__logo {
-    font-size: var(--font-medium);
-    font-weight: bold;
-    color: var(--color-white);
-}
-
-.navbar__menue {
-    display: flex;
-}
-
-.navbar__menue__item {
-    padding: 8px 12px;
-    margin: 0 4px;
-    color: var(--color-white);
-    cursor: pointer;
-}
-
-.navbar__menue__item.active {
-    border: 1px solid white;
-    border-radius: var(--size-border-radius) ;
-}
-
-.navbar__menue__item:hover {
-    background-color: gray;
-    border-radius: var(--size-border-radius) ;
-}
-
-.navbar__toggle-btn {
-    position: absolute;
-    top: 24px;
-    right: 32px;
-    font-size: 24px;
-    color: var(--color-white);
-    display: none;
-}
-
-/* home */
-#home {
-    background: url(./images/리얼배경.png) center/cover no-repeat;
-    padding: 40px;
-    text-align: center;
-}
-
-.home__avatar {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 2px solid var(--color-white);
-}
-
-.home__title, .home__description {
-    color : var(--color-white)
-}
-
-.home__contact {
-    color: var(--color-black);
-    font-size: var(--font-regular);
-    font-weight: bold;
-    margin: 24px;
-    padding: 8px 12px;
-    border: 2px solid var(--color-white);
-    border-radius: var(--size-border-radius);
-
-}
-
-.section {
-    padding: 50px;
-    text-align: center;
-    margin: auto;
-}
-
-.section__container {
-    max-width: 1200px;
-    margin: auto;
-}
-
-/*내소개*/
-
-.about__majors{
-    display: flex;
-    justify-content: space-between;
-    margin: 80px 0;
-}
-
-.major__icon {
-    width: 170px;
-    height: 170px;
-    line-height: 170px;
-    font-size: 70px;
-    margin: auto;
-    color: gray;
-    border: 1px solid ;
-    border-radius: 50%;
-    margin-bottom: 16px;
-}
-
-
-.about__jobs{
-    display: flex;
-    justify-content: center;
-    margin: 80px 0;
-
-}
-
-.job > img {
-    border: 1px solid ;
-    width: 50%px;
-    height: 80px;
-    font-size: 60px;
-    margin: auto;
-    color: gray;  
-    margin: 70px;
-
-}
-
-
-
-.major__icon i {
-    transform: all var(--animation-duration) ease ;
-}
-
-.major__icon:hover i {
-    color: black;
-    transform: rotate(-30deg) scale(1.1);
-}
-
-/* .job > img {
-    width: 300px;
-    height: 80px;
-} */
- 259  
-portfolio-main/style.css
-@@ -0,0 +1,259 @@
-@font-face {
-    font-family: 'twayair';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-:root{
-    --color-white : #ffffff;
-    --color-black : #000000;
-    --color-backg : #383838;
-    --color-asd : gray;
 
     --font-large : 48px;
     --font-medium : 28px;
@@ -339,7 +123,7 @@ p{
     top: 24px;
     right: 32px;
     font-size: 24px;
-    color: var(--color-white);
+    color: var(--color-black);
     display: none;
 }
 
@@ -389,17 +173,7 @@ p{
     margin: 80px 0;
 }
 
-.major__icon {
-    width: 170px;
-    height: 170px;
-    line-height: 170px;
-    font-size: 70px;
-    margin: auto;
-    color: gray;
-    border: 1px solid ;
-    border-radius: 50%;
-    margin-bottom: 16px;
-}
+
 
 
 .about__jobs{
@@ -440,26 +214,17 @@ p{
 
 }
 
-
-.about__jobs{
-    display: flex;
-    justify-content: center;
-    margin:  0;
-
-
-}
-
-.job > img {
-    border: 1px solid ;
-    width: 100%px;
-    height: 60px;
-    font-size: 60px;
+.major__icon {
+    width: 170px;
+    height: 170px;
+    line-height: 170px;
+    font-size: 70px;
     margin: auto;
-    color: gray;  
-    margin: 70px;
-
+    color: gray;
+    border: 1px solid ;
+    border-radius: 50%;
+    margin-bottom: 16px;
 }
-
 
 .major__icon i {
     transform: all var(--animation-duration) ease ;
@@ -475,7 +240,12 @@ p{
 }
 .major__description{font-size: var(--font-small);}
 
+/* 내가 */
 
+/* .about__jobs{
+    display: flex;
+    align-items: center;
+}
 
 .job{
     display: flex;
@@ -487,18 +257,19 @@ p{
     text-align: left;
 }
 
-.job__name, .job_period{
+/* .job__name, .job_period{
     color: var(--color-asd);
-}
+} */
+
 .job__name{font-size: var(--font-small);}
 .job_period{
     font-size: var(--font-micro);
 }
 
 .about__jobs__icon {
-    width: 120px;
-    height: 120px;
-}
+    width: 150px;
+    height: 60px;
+} */
 
 /*기술*/
 #skills{
@@ -651,7 +422,12 @@ p{
 }
 
 /* 추천서 */
-
+#skills{
+    background-color: beige;
+}
+#skill{
+    background-color: blanchedalmond;
+}
 #testimonials{
     background-color: var(--color-asd);
 }
@@ -730,15 +506,29 @@ p{
         width: 100%;
         display: none;
     }
+
     .about__majors {
         flex-direction: column;
     }
+
     .major{
         margin-bottom: 38px;
     }
+
+    .about__jobs{
+        flex-direction: column;
+    }
+
+    .about__edus{
+        flex-direction: column;
+    }
+    
+
+
     .skillset {
         flex-direction: column;
     }
+
 
     .project{
         flex-grow: 1;
