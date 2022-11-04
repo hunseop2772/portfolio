@@ -144,6 +144,9 @@ p{
 .home__title, .home__description {
     color : var(--color-white)
 }
+.home__description{
+    text-shadow: 3px 3px 1px var(--color-black);
+}
 
 .home__contact {
     color: var(--color-black);
@@ -166,13 +169,6 @@ p{
     max-width: 1200px;
     margin: auto;
 }
-
-.about__majors{
-    display: flex;
-    justify-content: space-between;
-    margin: 80px 0;
-}
-
 
 
 
@@ -214,6 +210,12 @@ p{
 
 }
 
+.about__majors{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
 .major__icon {
     width: 170px;
     height: 170px;
@@ -236,18 +238,34 @@ p{
 }
 
 .major__title, .major__description{
-    color: var(--color-asd);
+    color: var(--color-black);
 }
 .major__description{font-size: var(--font-small);}
 
-/* 내가 */
-
-/* .about__jobs{
+.logos{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin: 10px;
+    margin-top: 50px;
+    width: 80px;
+    border-radius: 50%;
+    border: solid var(--color-asd);
 }
 
-.job{
+/* .about__majors{
+   flex-direction: column;
+} */
+
+/* .major{
+    margin-bottom: 38px;
+} */
+
+/* 내가 */
+
+
+/* .job{
     display: flex;
     align-items: center;
 }
@@ -255,7 +273,7 @@ p{
 .job__description{
     margin: 0 16px;
     text-align: left;
-}
+} */
 
 /* .job__name, .job_period{
     color: var(--color-asd);
