@@ -526,8 +526,19 @@ p{
     }
 
     .about__majors {
+        margin: 0 auto;
+        width: 100%;
         flex-direction: column;
     }
+
+    .logos{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .logo{
+        width: 60px;
+    }
+   
 
     .major{
         margin-bottom: 38px;
