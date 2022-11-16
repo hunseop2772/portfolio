@@ -111,6 +111,7 @@ p{
 
 .navbar__menue {
     display: flex;
+    margin: 0;
 }
 
 .navbar__menue__item {
@@ -118,25 +119,30 @@ p{
     margin: 0 4px;
     color: var(--color-white);
     cursor: pointer;
+    border: 1px solid transparent;
+    /* border-radius: var(--size-border-radius); */
 }
 
-.navbar__menue__item.active {
-    border: 1px solid white;
-    border-radius: var(--size-border-radius) ;
+.navbar__menue__item.active{
+    border: 1px solid var(--color-white);
 }
 
 .navbar__menue__item:hover {
+    border-color:white ;
     background-color: gray;
-    border-radius: var(--size-border-radius) ;
+    
 }
 
 .navbar__toggle-btn {
     position: absolute;
-    top: 24px;
-    right: 32px;
+    top: 13px;
+    right: 20px;
     font-size: 24px;
     color: var(--color-black);
+    background-color: rgb(236, 230, 230);
     display: none;
+    border-radius:10% ;
+    
 }
 
 /* home */
@@ -173,7 +179,10 @@ p{
     padding: 8px 12px;
     border: 2px solid var(--color-white);
     border-radius: var(--size-border-radius);
+}
 
+.home__contact:hover{
+    background-color: gray;
 }
 
 .section {
@@ -401,6 +410,16 @@ p{
     transition: all var(--animation-duration) ease-in;
 }
 
+.work__projects.anim-out{
+    opacity: 0;
+    transform: scale(0.96) translateY(40px);
+   
+}
+
+.project.invisible{
+    display: none;
+}
+
 .work__projects{
     display: flex;
     flex-wrap: wrap;
@@ -530,11 +549,11 @@ p{
 
 .arrow-up{
     position: fixed;
-    right: 50px;
-    bottom: 50px;
-    width: 70px;
-    height: 70px;
-    font-size: 50px;
+    right: 3%;
+    bottom: 3%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
     color: #ffffff;
     background-color: #383838;
     border: solid 1px black;
@@ -553,16 +572,16 @@ p{
 
 .jobs{
     margin: 2px;
-    background-color: rgb(211, 208, 208);
-    border: solid 4px black;
+    /* background-color: rgb(211, 208, 208);
+    border: solid 4px black; */
     border-radius: 20%;
     padding-bottom: 10px;
 }
 .edus{
     margin: 2px;
-    border: solid 4px black;
+    /* border: solid 4px black; */
     border-radius: 20%;
-    background-color: rgb(211, 208, 208);
+    /* background-color: rgb(211, 208, 208); */
     padding-bottom: 30px;
 }
 
@@ -581,6 +600,11 @@ p{
         width: 100%;
         display: none;
     }
+
+    .navbar__menue.open{
+        display: block;
+    }
+
 
     .about__majors {
         margin: 0 auto;
@@ -635,5 +659,10 @@ p{
 
     #pro{
         border-radius: 20%;
+    }
+    .arrow-up{
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
     }
 }
