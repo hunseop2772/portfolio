@@ -9,8 +9,12 @@
     <link rel="icon" type="image/png" href="./images/hippo-solid.png">
     <script src="https://kit.fontawesome.com/28df9d0d7c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+
+      
+
     <!-- Navbar start -->
     <nav id="navbar">
         <div class="navbar__logo">
@@ -18,40 +22,45 @@
             <a href="#">Song</a>
         </div>
         <ul class="navbar__menue">
-            <li class="navbar__menue__item active" >Home</li>
-            <li class="navbar__menue__item">Profile</li>
-            <li class="navbar__menue__item">Skills</li>
-            <li class="navbar__menue__item">Projects </li>
-            <li class="navbar__menue__item">Recommend</li>
-            <li class="navbar__menue__item">contact</li>
+            
+            <li class="navbar__menue__item active" data-link="#home">Home</li>
+            <li class="navbar__menue__item" data-link="#about">Profile</li>
+            <li class="navbar__menue__item" data-link="#skills">Skills</li>
+            <li class="navbar__menue__item" data-link="#work">Projects </li>
+            <li class="navbar__menue__item" data-link="#testimonials">Recommend</li>
+            <li class="navbar__menue__item" data-link="#contact">contact</li>
         </ul>
         <!-- Button start -->
         <button class="navbar__toggle-btn">
             <i class="fa-solid fa-bars"></i>
+            
         </button>
         <!-- Button end -->
     </nav>
     <!-- Navbar end -->
-
+    
      <!-- Home start -->
      <section id="home">
+        
         <div class ="home__container">
         <img src="./images/제목_없는_디자인__2_-removebg-preview.png" alt="Song's photo" class="home__avatar">
-        <h1 class="home__title">안녕하세요 송훈섭입니다.</h1>
+        <h1 class="home__title">SONG HUNSEOP</h1>
         <h2 class="home__description">4년간 프로그램 손놓다가, 다시 시작한 초보입니다! 열심히하겠습니다</h2>
-        <button class="home__contact">연락주세요</button>
-        </div>
+        <button class="home__contact" data-link="#contact">연락주세요</button>
+        
+    </div>
     </section>
     <!-- Home end -->
    
     <!-- My Profile start-->
     <section id ="about" class ="section section__container">
-        
+     
         <h1>Profile</h1>
         <hr>
         <p >
+            
             <h2 style="margin: 50px;"><i class="fa-solid fa-person-chalkboard"></i> 자기소개</h2>
-            <p style = "margin-bottom:200px ;" >모든 언어 if문 한계!!.tjdnf corrupti officiis,
+            <p id="pro" style = "margin-bottom:100px ; border: solid 4px black; padding: 30px;" >모든 언어 if문 한계!!.tjdnf corrupti officiis,
                  distinctio perferendis maxime voluptates eos provident tempore repellendus amet eaque debitis quibusdam,
                   ipsum ullam dolor nulla?Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit blanditiis tenetur amet perspiciatis ipsam corporis minus autem ad magnam reiciendis unde nostrum, perferendis quasi enim harum. Nulla, assumenda quo.</p>
         </p>
@@ -256,7 +265,7 @@
                     <img class ="logo" src="./images/vuejs.png" alt="">
                 </div>
             </div>
-    
+        
 <hr>
 
             <div class="major">
@@ -409,93 +418,93 @@
     <!-- Projects start -->
         <section id="work" class="section">
             <div class="section__container">
-                <h1>내 작업실</h1>
-                <h3>project</h3>
+                <h1>projects</h1>
+                <h3>내 작업실</h3>
                 <div class="work__categories">
-                    <button class="category__btn">
+                    <button class="category__btn selected" data-filter="*">
                         전체 <span class="category__count">10</span>
                     </button>
-                    <button class="category__btn">
+                    <button class="category__btn" data-filter="front-end">
                         프론트엔드 <span class="category__count">5</span>
                     </button>
-                    <button class="category__btn">
+                    <button class="category__btn"data-filter="back-emd">
                         백엔드 <span class="category__count">3</span>
                     </button>
-                    <button class="category__btn">
+                    <button class="category__btn"data-filter="mobile">
                         모바일 <span class="category__count">2</span>
                     </button>
                 </div>
                 <div class="work__projects">
-                    <a href="" class="project" target="_blank">
+                    <a href="" class="project" target="_blank" data-type="front-end">
                         <img src="./images/몰러.png" alt="IOT" class="project__img">
                     <div class="project__description">
                         <h3>메어비엔비 클론코딩</h3>
                         <span>Clone coding 아주 비슷함</span>
                     </div>
                     </a>
-                    <!-- <a href="" class="project" target="_blank">
+                    <a href="" class="project" target="_blank" data-type="front-end">
                         <img src="./images/포플1.png" alt="IOT" class="project__img">
                     <div class="project__description">
                         <h3>제주항공 클론코딩</h3>
                         <span>Clone coding 아주 비슷함</span>
                     </div>
                     </a>
-                    <a href="" class="project" target="_blank">
+                    <a href="" class="project" target="_blank"data-type="front-end">
                         <img src="./images/포플1.png" alt="IOT" class="project__img">
                     <div class="project__description">
                         <h3>진에어 클론코딩</h3>
                         <span>Clone coding 아주 비슷함</span>
                     </div>
                     </a>
-                    <a href="" class="project" target="_blank">
+                    <a href="" class="project" target="_blank"data-type="front-end">
                         <img src="./images/포플1.png" alt="IOT" class="project__img">
                     <div class="project__description">
                         <h3>배달의민족 클론코딩</h3>
                         <span>Clone coding 아주 비슷함</span>
                     </div>
                     </a>
-                    <a href="" class="project" target="_blank">
+                    <a href="" class="project" target="_blank"data-type="front-end">
                         <img src="./images/포플1.png" alt="IOT" class="project__img">
                     <div class="project__description">
                         <h3>CGV 클론코딩</h3>
                         <span>Clone coding 아주 비슷함</span>
                     </div>
                     </a>
-                    <a href="" class="project" target="_blank">
+                    <a href="" class="project" target="_blank"data-type="back-end">
                         <img src="./images/포플1.png" alt="IOT" class="project__img">
                     <div class="project__description">
                         <h3>미켓컬리 클론코딩</h3>
                         <span>Clone coding 아주 비슷함</span>
                     </div>
                     </a>
-                    <a href="" class="project" target="_blank">
+                    <a href="" class="project" target="_blank"data-type="back-end">
                         <img src="./images/포플1.png" alt="IOT" class="project__img">
                     <div class="project__description">
                         <h3>트리플 클론코딩</h3>
                         <span>Clone coding 아주 비슷함</span>
                     </div>
                     </a>
-                    <a href="" class="project" target="_blank">
+                    <a href="" class="project" target="_blank"data-type="back-end">
                         <img src="./images/포플1.png" alt="IOT" class="project__img">
                     <div class="project__description">
                         <h3>여기어때 클론코딩</h3>
                         <span>Clone coding 아주 비슷함</span>
                     </div>
                     </a>
-                    <a href="" class="project" target="_blank">
+                    <a href="" class="project" target="_blank"data-type="mobile">
                         <img src="./images/포플1.png" alt="IOT" class="project__img">
                     <div class="project__description">
                         <h3>야놀자 클론코딩</h3>
                         <span>Clone coding 아주 비슷함</span>
                     </div>
                     </a>
-                    <a href="" class="project" target="_blank">
+                    <a href="" class="project" target="_blank"data-type="mobile">
                         <img src="./images/포플1.png" alt="IOT" class="project__img">
                     <div class="project__description">
                         <h3>네이버 클론코딩</h3>
                         <span>Clone coding 아주 비슷함</span>
                     </div>
-                    </a> -->
+                    </a>
                 </div>
             </div>
         </section>
@@ -504,7 +513,7 @@
     <!-- Recomend start -->
     <section id="testimonials" class ="section" >
         <div class="section__container">
-            <h1>추천서</h1>
+            <h1>Recomend</h1>
             <h3>이분들은 저를 보고 짱이라고 했어요!</h3>
             <div class="testimonials">
                 <div class="testimonial">
@@ -549,7 +558,7 @@
     </p>
 </section>
 <!-- contact end-->
-<button class = "arrow up">
+<button class = "arrow-up">
     <i class ="fa-solid fa-arrow-up"></i>
 </button>
 
