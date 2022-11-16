@@ -119,8 +119,8 @@ p{
     margin: 0 4px;
     color: var(--color-white);
     cursor: pointer;
-    border: 1px solid transparent;
-    /* border-radius: var(--size-border-radius); */
+    /* border: 1px solid transparent; */
+    border-radius: var(--size-border-radius);
 }
 
 .navbar__menue__item.active{
@@ -382,14 +382,15 @@ p{
     border-radius: var(--size-border-radius);
     font-size: var(--font-regular);
     padding: 6px 0px;
+    /* color: var(--color-white); */
 }
 
-.category__btn.active, .category__btn:hover{
+.category__btn.selected, .category__btn:hover {
     background-color: var(--color-orange);
-    color: var(--color-white);
+    color: var(--color-white)
 }
 
-.category__btn.active .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count{
     opacity: 1;
     top: 0;
