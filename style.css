@@ -386,8 +386,8 @@ p{
 }
 
 .category__btn.selected, .category__btn:hover {
-    background-color: var(--color-orange);
-    color: var(--color-white)
+    background-color: beige;
+    color: var(--color-black)
 }
 
 .category__btn.selected .category__count,
@@ -397,7 +397,7 @@ p{
 }
 
 .category__count {
-    background-color: rgba(51, 13, 51, 0.763);
+    background-color: black;
     border-radius: 50%;
     color: var(--color-white);
     width: 24px;
