@@ -614,14 +614,17 @@ p{
     }
 
  
-    .logos{
+   .logos{
         width: 100%;
         margin: 0 auto;
+        text-align: center;
     }
     .logo{
         width: 70px;
          margin: 0 auto;
+         text-align: center;
     }
+   
    
 
     .major{
