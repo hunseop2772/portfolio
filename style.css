@@ -613,12 +613,14 @@ p{
         flex-direction: column;
     }
 
+ 
     .logos{
         width: 100%;
         margin: 0 auto;
     }
     .logo{
         width: 70px;
+         margin: 0 auto;
     }
    
 
