@@ -1,566 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Song's portfolio</title>
-    <meta name="author" content ="hunseop">
-    <meta name="description" content="삶의 질을 개선하는 개발자">
-    <link rel="icon" type="image/png" href="./images/hippo-solid.png">
-    <script src="https://kit.fontawesome.com/28df9d0d7c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/c75b82bac6.js"
+      crossorigin="anonymous"
+    ></script>
 
-      
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
-    <!-- Navbar start -->
-    <nav id="navbar">
-        <div class="navbar__logo">
-            <i class="fa-solid fa-computer"></i>
-            <a href="#">Song</a>
-        </div>
-        <ul class="navbar__menue">
-            
-            <li class="navbar__menue__item active" data-link="#home">Home</li>
-            <li class="navbar__menue__item" data-link="#about">Profile</li>
-            <li class="navbar__menue__item" data-link="#skills">Skills</li>
-            <li class="navbar__menue__item" data-link="#work">Projects </li>
-            <li class="navbar__menue__item" data-link="#testimonials">Recommend</li>
-            <li class="navbar__menue__item" data-link="#contact">contact</li>
-        </ul>
-        <!-- Button start -->
-        <button class="navbar__toggle-btn">
-            <i class="fa-solid fa-bars"></i>
-            
-        </button>
-        <!-- Button end -->
-    </nav>
-    <!-- Navbar end -->
-    
-     <!-- Home start -->
-     <section id="home">
-        
-        <div class ="home__container">
-        <img src="./images/제목_없는_디자인__2_-removebg-preview.png" alt="Song's photo" class="home__avatar">
-        <h1 class="home__title">SONG HUNSEOP</h1>
-        <h2 class="home__description">4년간 프로그램 손놓다가, 다시 시작한 초보입니다! 열심히하겠습니다</h2>
-        <button class="home__contact" data-link="#contact">연락주세요</button>
-        
-    </div>
-    </section>
-    <!-- Home end -->
-   
-    <!-- My Profile start-->
-    <section id ="about" class ="section section__container">
-     
-        <h1 style="padding-top: 25px;">Profile</h1>
-        <hr>
-        <p >
-            
-            <h2 style="margin: 50px;"><i class="fa-solid fa-person-chalkboard"></i> 자기소개</h2>
-            <p id="pro" style = "margin-bottom:100px ; border: solid 4px black; padding: 30px;" >모든 언어 if문 한계!!.tjdnf corrupti officiis,
-                 distinctio perferendis maxime voluptates eos provident tempore repellendus amet eaque debitis quibusdam,
-                  ipsum ullam dolor nulla?Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit blanditiis tenetur amet perspiciatis ipsam corporis minus autem ad magnam reiciendis unde nostrum, perferendis quasi enim harum. Nulla, assumenda quo.</p>
-        </p>
-    
-        <!-- <div class="about__majors">
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fa-brands fa-html5"></i>
-            </div>
-            <h2 class="major__title">Front-end</h2>
-            <div class="major__descriptiopn">
-                HTML, CSS, JavaScript, TypeScript,<br>
-                React, Vue
-            </div>
-        </div>
+    <title>Hunseop</title>
+    <link rel="shortcut icon" type="image/png" href="images/brand.png" />
 
-        <div class="major">
-            <div class="major__icon">
-              <i class="fa-solid fa-server"></i>
-            </div>
-            <h2 class="major__title">Back-end</h2>
-            <div class="major__descriptiopn">
-                Java, JavaScript, Go, NodeJS<br>
-                Spring, C#, Python
-            </div>
-        </div>
+    <!-- Styles -->
+    <link href="styles/styles.css" rel="stylesheet" media="screen" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+  </head>
 
-        <div class="major">
-            <div class="major__icon">
-                <i class="fa-solid fa-mobile-screen"></i>
-            </div>
-            <h2 class="major__title">Mobile</h2>
-            <div class="major__descriptiopn">
-                Android, IOS, React Native, Flutter,<br>
-                Swift, Kotlin
-            </div>
-        </div>
-    </div> -->
-
-<hr>
-
-<h2  ><i class="fa-solid fa-graduation-cap"></i> 경험</h2>
-
-    
-        <div class="about__jobs">
-          
-       
-
- 
-  
-        <div class="jobs">
-            <div class="job">
-                <img src="./images/대학.jpg" alt="한밭대학교/정보통신공학과" class="about__jobs__icon">
-                <div class="job__description">
-                <p class="job__name">
-                    한밭대학교/정보통신공학과 졸업
-                </p>
-                <p class="job__period">
-                        2016.03~2020.2
-                </p>
-                <p class="job__story">초등학교 교육봉사 2016.9</p>
-                <p class="job__story">빅데이터 세미나 2016.10</p>
-                <p class="job__story">외국 학생 적응 봉사 2017.3 ~ 2017.11</p>
-                <p class="job__story">ROTC 2017.12 ~ 2020.2</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="jobs">
-    <div class="job">
-        <img src="./images/한국연구.jpg" alt="한국연구재단"class="about__jobs__icon">
-        <div class="job__description">
-        <p class="job__name">
-            한국연구재단/원자력연구팀 국비인턴
-        </p>
-        <p class="job__period">
-                2019.12~2020.02
-        </p>
-        <p class="job__story">연구 현황 정리 및 회의 준비</p>
-        <p class="job__story">연구 진행상황 일정 관리 </p>
-           
-        </div>
-    </div>
-</div>
-
-    <!-- <hr> -->
- 
-        <div class="jobs">
-            <div class="job">
-                <img src="./images/군대.jpg" alt="군대" class="about__jobs__icon">
-                <div class="job__description">
-                <p class="job__name">
-                    통신소대장 겸 본부중대장 
-                </p>
-                <p class="job__period">
-                        2020.02~2022.06
-                </p>
-                <p class="job__story">중간관리자 역할 (인원관리 및 교육)</p>
-                <p class="job__story">통신장비 및 VOIP 등 장비 유지 활용</p>
-                <p class="job__story">C4I(전군전술자동 지휘통신체계) 운용</p>
-                <p class="job__story">✔ 표창 : 위험 인원 사전 식별 및 조치로<br>
-                      병력관리 유공 사단장 표창 등 11건</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="jobs">
-            <div class="job">
-                <img src="./images/대학원.jpg" alt="대학원"class="about__jobs__icon">
-                <div class="job__description">
-                <p class="job__name">
-                    아주대 정보통신대학원/지능형소프트웨어
-                </p>
-                <p class="job__period">
-                        2020.6~2023.2
-                </p>
-                <p class="job__story">2020.06~2022.06 군복무 변행 수행</p>
-                </div>
-            </div>
-        </div>
+  <body class="body-full-page">
+    <div class="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
     </div>
 
-    <!-- </div> -->
-    
-    <hr>
-    <!-- </section> -->
-    <!-- education start -->
-    <h2 ><i class="fa-solid fa-chalkboard-user"></i> 교육</h2>
-<div class="about__edus">
-    <div class="edus">
-        <div class="edu">
-            <img src="./images/SBS.jpg" alt="대전">
-            <div class="edu__description">
-            <p class="edu__name">
-                SBS아카데미 컴퓨터학원(대전)
-            </p>
-            <p class="edu__period">
-                    2016.02~2016.01
-            </p>
-            <p class="job__story"> C언어 기초</p>
-             
-            </div>
+    <!-- Navbar -->
+
+    <header class="navbar navbar-2 navbar-white boxed">
+      <a class="brand" href="index.html">
+        <img class="brand-img" alt="" src="images/brand.png" />
+        <div class="brand-info">
+          <div class="brand-name">Hunseop</div>
+          <div class="brand-text">web developer</div>
         </div>
+      </a>
+
+      <div class="social-list hidden-xs">
+        <a href="https://hunseop2772.tistory.com/">
+          <i class="fa-solid fa-t"></i
+        ></a>
+        <a href="https://github.com/hunseop2772"
+          ><i class="fa-brands fa-github-square"></i
+        ></a>
+      </div>
+    </header>
+    <div class="copy-bottom white boxed">© Hunseop 2023.</div>
+    <div class="lang-bottom white boxed"></div>
+    <div class="pagepiling">
+      <div
+        data-anchor="page1"
+        class="pp-scrollable text-white section section-1"
+      >
+        <div class="scroll-wrap">
+          <div
+            class="section-bg vertical-title text-dark hidden-xs hidden-sm"
+          ></div>
+          <div class="scrollable-content">
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="vertical-title hidden-xs hidden-sm">
+                  <span>Introduce</span>
+                </div>
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <div class="row">
+                        <div class="col-md-8 col-lg-6">
+                          <p class="subtitle-top">
+                            Welcome To<br />Hunseop's Portfolio
+                          </p>
+                          <h1 class="display-2 text-white">
+                            <span class="text-primary">Hello</span> my name is
+                            Hunseop.
+                          </h1>
+                          <div class="hr-bottom"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-anchor="page2" class="pp-scrollable section section-2">
+        <div class="scroll-wrap">
+          <div class="scrollable-content">
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="vertical-title text-dark hidden-xs hidden-sm">
+                  <span>what I do</span>
+                </div>
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <div class="row">
+                        <div class="col-md-5 col-lg-5">
+                          <p class="subtitle-top text-dark">About me</p>
+                          <h2 class="title-uppercase">
+                            I am a<br />
+                            <span class="text-primary"
+                              >creative web developer.</span
+                            >
+                            the best around
+                          </h2>
+                          대학은 정보통신을 전공했고 대학원은 지능형
+                          소프트웨어를 전공했습니다. 대학생일 때 하드웨어와
+                          프로그램을 함께 사용하는 경험을 하다 인공지능까지
+                          결합을 할 수 있으면 좋겠다고 생각하여 군대 입대와
+                          동시에 대학원을 신청하였습니다. 저는 인공지능, IT
+                          기술을 자바를 통해 활용하는 분야에 관심이 많이 있고
+                          배우려는 자세를 가지고 있습니다. 최신 추세와 이 회사의
+                          IT 솔루션을 배우고 일하고 싶습니다.
+                        </div>
+                        <div
+                          class="col-md-6 col-lg-5 col-md-offset-1 col-lg-offset-2"
+                        >
+                          <ul class="programs">
+                            <li>
+                              <i class="fa-brands fa-html5"></i>
+                              <p class="icon">HTML5</p>
+                            </li>
+                            <li>
+                              <i class="fa-brands fa-css3-alt"></i>
+                              <p class="icon">CSS3</p>
+                            </li>
+                            <li>
+                              <i class="devicon-nodejs-plain"></i>
+                              <p class="icon">NodeJs</p>
+                            </li>
+                            <li>
+                              <i class="devicon-cplusplus-plain"></i>
+                              <p class="icon">C++</p>
+                            </li>
+                            <li>
+                              <i class="fa-brands fa-js"></i>
+                              <p class="icon">JavaScript</p>
+                            </li>
+                            <li>
+                              <i class="devicon-java-plain"></i>
+                              <p class="icon">Java</p>
+                            </li>
+                            <li>
+                              <i class="devicon-python-plain"></i>
+                              <p class="icon">Python</p>
+                            </li>
+                            <li>
+                              <i class="devicon-mysql-plain"></i>
+                              <p class="icon">MySQL</p>
+                            </li>
+                            <li>
+                              <i class="devicon-spring-plain"></i>
+                              <p class="icon">Spring</p>
+                            </li>
+                            <li>
+                              <i class="devicon-apache-plain"></i>
+                              <p class="icon">Apache</p>
+                            </li>
+                            <li>
+                              <i class="devicon-tomcat-line"> </i>
+                              <p class="icon">Tomcat</p>
+                            </li>
+                            <li>
+                              <i class="devicon-gradle-plain"></i>
+                              <p class="icon">Gradle</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-anchor="page3"
+        class="pp-scrollable text-white section section-3"
+      >
+        <div class="scroll-wrap">
+          <div class="bg-changer">
+            <div
+              class="section-bg active"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.6)
+                  ),
+                  url(images/bg/흑백배경.jpg);
+              "
+            ></div>
+          </div>
+          <div class="scrollable-content">
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="vertical-title hidden-xs hidden-sm">
+                  <span>my works</span>
+                </div>
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h2 class="title-uppercase text-white">
+                            MY PROJECTS
+                          </h2>
+                          <div class="row-project-box row">
+                            <div
+                              class="col-project-box col-sm-6 col-md-4 col-lg-3"
+                            >
+                              <a
+                                href="https://github.com/hunseop2772/WatchaPedia_user"
+                                class="project-box"
+                              >
+                                <div class="project-box-inner">
+                                  <h5>WatchaPedia Clone</h5>
+                                  <div class="project-category">
+                                    Group Project
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div
+                              class="col-project-box col-sm-6 col-md-4 col-lg-3"
+                            >
+                              <a
+                                href="https://github.com/hunseop2772/Recommendation-System"
+                                class="project-box"
+                              >
+                                <div class="project-box-inner">
+                                  <h5>recommend System</h5>
+                                  <div class="project-category">
+                                    Iot-programming
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div
+                              class="col-project-box col-sm-6 col-md-4 col-lg-3"
+                            >
+                              <a
+                                href="https://koreait-academy.github.io/Crime-Data-Analysis/"
+                                class="project-box"
+                              >
+                                <div class="project-box-inner">
+                                  <h5>Crime-Data-Analysis</h5>
+                                  <div class="project-category">
+                                    Data-Analysis-Project
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div
+                              class="col-project-box col-sm-6 col-md-4 col-lg-3"
+                            >
+                              <a
+                                href="https://hunseop2772.github.io/Momentum-Ap/"
+                                class="project-box"
+                              >
+                                <div class="project-box-inner">
+                                  <h5>Momentum App</h5>
+                                  <div class="project-category">
+                                    Js-First-Study
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-anchor="page4" class="pp-scrollable section section-4">
+        <div class="scroll-wrap">
+          <div class="scrollable-content">
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="vertical-title text-dark hidden-xs hidden-sm">
+                  <span>Who I am </span>
+                </div>
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <div class="row">
+                        <div class="col-md-5 col-lg-5">
+                          <p class="subtitle-top text-dark">My Top Talents</p>
+                          <h2 class="title-uppercase">
+                            I like
+                            <span class="text-primary">to make</span> things
+                            easy and fun
+                          </h2>
+                          <ul class="service-list">
+                            <li>01. 소통능력</li>
+                            <li>02. 배우려는 자세</li>
+                            <li>03. 꾸준함</li>
+                          </ul>
+                        </div>
+                        <div
+                          class="col-md-6 col-lg-5 col-md-offset-1 col-lg-offset-2"
+                        >
+                          <div class="dots-image-2">
+                            <img
+                              alt="sheraton-team"
+                              class="img-responsive"
+                              src="images/solidier.jpg"
+                            />
+                            <div class="dots"></div>
+                            <div class="experience-info">
+                              <div class="number">2</div>
+                              <div class="text">
+                                7개월간<br />중간관리자 & 장비 유지보수<br />수행했습니다.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        data-anchor="page7"
+        class="pp-scrollable text-white section section-6"
+      >
+        <div class="scroll-wrap">
+          <div
+            class="section-bg active vertical-title text-dark hidden-xs hidden-sm"
+          ></div>
+          <div class="scrollable-content">
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="vertical-title hidden-xs hidden-sm">
+                  <span>recommendations</span>
+                </div>
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <div class="row">
+                        <div class="col-md-6 col-lg-5">
+                          <span class="icon-quote ion-quote"
+                            ><i class="fa-solid fa-quote-left"></i
+                          ></span>
+                          <h2 class="title-uppercase text-white">
+                            GRADUATE & CERTIFICATE
+                          </h2>
+                        </div>
+                        <div
+                          class="col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-2"
+                        >
+                          <div class="review-carousel owl-carousel">
+                            <div class="review-carousel-item">
+                              <div class="text">
+                                <img
+                                  src="images/졸업.jpg"
+                                  style="width: 300px"
+                                />
+                              </div>
+                              <div class="review-author">
+                                <div class="author-name">아주대 대학원</div>
+                                <i>졸 업 장</i>
+                              </div>
+                            </div>
+                            <div class="review-carousel-item">
+                              <div class="text">
+                                <img
+                                  src="images/개근상.png"
+                                  style="width: 300px"
+                                />
+                              </div>
+                              <div class="review-author">
+                                <div class="author-name">koreait-academy</div>
+                                <i>개 근 상</i>
+                              </div>
+                            </div>
+                            <div class="review-carousel-item">
+                              <div class="text">
+                                <img
+                                  src="images/표창장.jpg"
+                                  style="width: 300px"
+                                />
+                              </div>
+                              <div class="review-author">
+                                <div class="author-name">대한민국육군</div>
+                                <i>표 창 장</i>
+                              </div>
+                            </div>
+                            <div class="review-carousel-item">
+                              <div class="text">
+                                <img
+                                  src="images/자격증.jpg"
+                                  style="width: 300px"
+                                />
+                              </div>
+                              <div class="review-author">
+                                <div class="author-name">빅데이터</div>
+                                <i>자 격 증</i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-anchor="page8" class="pp-scrollable section section-6">
+        <div class="scroll-wrap">
+          <div class="scrollable-content">
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="vertical-title text-dark hidden-xs hidden-sm">
+                  <span>contact</span>
+                </div>
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro overflow-hidden">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h2 class="title-uppercase">Get In Touch</h2>
+                          <div class="contact-info">
+                            <form
+                              action="https://formspree.io/f/xwkyajjg"
+                              method="POST"
+                              class="js-form"
+                              novalidate="novalidate"
+                            >
+                              <div class="row">
+                                <div class="form-group col-sm-6">
+                                  <input
+                                    type="text"
+                                    name="name"
+                                    required=""
+                                    placeholder="Name*"
+                                    aria-required="true"
+                                  />
+                                </div>
+                                <div class="form-group col-sm-6">
+                                  <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email"
+                                  />
+                                </div>
+                                <div class="form-group col-sm-12">
+                                  <input
+                                    type="text"
+                                    name="subject"
+                                    placeholder="Subject (Optional)"
+                                  />
+                                </div>
+                                <div class="form-group col-sm-12">
+                                  <textarea
+                                    name="message"
+                                    required=""
+                                    placeholder="Message*"
+                                    aria-required="true"
+                                  ></textarea>
+                                </div>
+                                <div class="col-sm-12">
+                                  <button type="submit" class="btn">
+                                    Post Comment
+                                  </button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="edus">
-        <div class="edu">
-            <img src="./images/koreait.jpg" alt="강남">
-            <div class="job__description">
-            <p class="job__name">
-                koreaIT아카데미(강남)
-            </p>
-            <!-- <p class="edu__period">
-                    2022.7~2023.2
-            </p> -->
-            <p class="job__story"> JAVA  기초 복습 2달</p>
-            <p class="job__period">
-                2022.7 ~ 2022.9
-        </p>
-            <p class="job__story">웹서버 기반 AI응용 개발</p>
-            <p class="job__period">
-                2022.9 ~ 2023.2
-        </p>
-            </div>
-        </div>
-    </div>
-</div>
-<hr>
-</section>
-    <!-- education end -->
-    
-    <!-- My Profile end-->
+    <!-- jQuery -->
 
-     <!--기술-->
-     <section id ="skills" class="section">
-        <div class =section__container>
-            <h1 style="margin: 50px;">Skills</h1>
-            <hr>
-            <h2>소개</h2>
-            <p>사용할 수 있는 기술 중 자신있는 부분입니다 ❗❗
-            </p>
-           
-           
-           
-           
-           
-    <div class="about__majors">
-        
-                <div class="major">
-                    <div class="major__icon">
-                        <i class="fa-brands fa-html5"></i>
-                </div>
-                <h2 class="major__title">Front-end</h2>
-                <div class="major__descriptiopn">
-                    HTML, CSS, JavaScript, TypeScript,<br>
-                    React, Vue
-                </div>
-                <div class="logos">
-                    <img class ="logo" src="./images/html-5.png" alt="">
-                    <img class ="logo" src="./images/css.png" alt="">
-                    <img class ="logo" src="./images/javascript.png" alt="">
-                    <img class ="logo" src="./images/vuejs.png" alt="">
-                </div>
-            </div>
-        
-<hr>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
 
-            <div class="major">
-                <div class="major__icon">
-                  <i class="fa-solid fa-server"></i>
-                </div>
-                <h2 class="major__title">Back-end</h2>
-                <div class="major__descriptiopn">
-                    Java, JavaScript, Go, NodeJS<br>
-                    Spring, C#, Python
-                </div>
-                <div class="logos">
-                    <img class ="logo" src="./images/java.png" alt="">
-                    <img class ="logo" src="./images/javascript.png" alt="">
-                    <img class ="logo" src="./images/python.png" alt="">
-                    <img class ="logo" src="./images/mysql.png" alt="">
-                </div>
-            </div>
-        
-<hr>
-    
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fa-solid fa-mobile-screen"></i>
-                </div>
-                <h2 class="major__title">Mobile</h2>
-                <div class="major__descriptiopn">
-                    Android, IOS, React Native, Flutter,<br>
-                    Swift, Kotlin
-                </div>
-                <div class="logos">
-                    <img class ="logo" src="./images/github.png" alt="">
-                    <img class ="logo" src="./images/jenkins.png" alt="">
-                    <img class ="logo" src="./images/naverworks.png" alt="">
-                    <img class ="logo" src="./images/slack.png" alt="">
-                </div>
-            </div>
-
-       
-        </div>
-   
-           
-           
-           
-           
-            <div class="skillset">
-                <div class="skillset__left">
-                    <br>
-                    <br>
-                    <h3 class="skillset__title">language</h3>
-                    <br>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>HTML</span>
-                            <span>100%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width:100% "></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>CSS</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width:90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>JavaScript</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value"style="width:80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>TypeScript</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value"style="width:70%"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>React</span>
-                            <span>88%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value"style="width:88%"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>Java</span>
-                            <span>100%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value"style="width:100%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skillset__right">
-                    <div class="tools">
-                        <br>
-                        <h3 class="skillset__title">Tools</h3>                 
-                        <ul class="tools__list">
-                            <li><span>Visual Studio Code</span> </li>
-                            <li><span>IntelliJ</span> </li>
-                            <li><span>Android Studio</span> </li>
-                            <li><span>Xcode</span> </li>
-                            <li><span>Github DeskTop</span> </li>
-                            <li><span>Visual Studio</span> </li>
-                        </ul>
-                    </div>
-                    <br>
-                    <div class="etc">
-                        <h3 class="skillset__title">Etc</h3>
-                        <br>
-                        <li><span>Math</span></li>
-                        <li><span>Run</span></li>
-                        <li><span>Music</span></li>
-                    </div>
-                </div>
-
-            </div>
-
-            
-            
-
-
-            <hr>
-        </div>
-
-      
-
-    </section>
-
-
-
-
-
-    <!-- 기술 -->
-
-    <!-- Projects start -->
-        <section id="work" class="section">
-            <div class="section__container">
-                <h1 style="padding-top:25px ;">projects</h1>
-                <h3>내 작업실</h3>
-                <div class="work__categories">
-                    <button class="category__btn selected" data-filter="*">
-                        전체 <span class="category__count">10</span>
-                    </button>
-                    <button class="category__btn selected" data-filter="front-end">
-                        프론트엔드 <span class="category__count">5</span>
-                    </button>
-                    <button class="category__btn selected"data-filter="back-end">
-                        백엔드 <span class="category__count">3</span>
-                    </button>
-                    <button class="category__btn selected"data-filter="mobile">
-                        모바일 <span class="category__count">2</span>
-                    </button>
-                </div>
-                <div class="work__projects">
-                    <a href="https://github.com/hunseop2772/portfolio" class="project" target="_blank" data-type="front-end">
-                        <img src="./images/몰러.png" alt="IOT" class="project__img">
-                    <div class="project__description">
-                        <h3>메어비엔비 클론코딩</h3>
-                        <span>Clone coding 아주 비슷함</span>
-                    </div>
-                    </a>
-                    <a href="https://github.com/hunseop2772/Momentum-Ap" class="project" target="_blank" data-type="front-end">
-                        <img src="./images/포플1.png" alt="IOT" class="project__img">
-                    <div class="project__description">
-                        <h3>제주항공 클론코딩</h3>
-                        <span>Clone coding 아주 비슷함</span>
-                    </div>
-                    </a>
-                    <a href="" class="project" target="_blank"data-type="front-end">
-                        <img src="./images/포플1.png" alt="IOT" class="project__img">
-                    <div class="project__description">
-                        <h3>진에어 클론코딩</h3>
-                        <span>Clone coding 아주 비슷함</span>
-                    </div>
-                    </a>
-                    <a href="" class="project" target="_blank"data-type="front-end">
-                        <img src="./images/포플1.png" alt="IOT" class="project__img">
-                    <div class="project__description">
-                        <h3>배달의민족 클론코딩</h3>
-                        <span>Clone coding 아주 비슷함</span>
-                    </div>
-                    </a>
-                    <a href="" class="project" target="_blank"data-type="front-end">
-                        <img src="./images/포플1.png" alt="IOT" class="project__img">
-                    <div class="project__description">
-                        <h3>CGV 클론코딩</h3>
-                        <span>Clone coding 아주 비슷함</span>
-                    </div>
-                    </a>
-                    <a href="" class="project" target="_blank"data-type="back-end">
-                        <img src="./images/포플1.png" alt="IOT" class="project__img">
-                    <div class="project__description">
-                        <h3>미켓컬리 클론코딩</h3>
-                        <span>Clone coding 아주 비슷함</span>
-                    </div>
-                    </a>
-                    <a href="" class="project" target="_blank"data-type="back-end">
-                        <img src="./images/포플1.png" alt="IOT" class="project__img">
-                    <div class="project__description">
-                        <h3>트리플 클론코딩</h3>
-                        <span>Clone coding 아주 비슷함</span>
-                    </div>
-                    </a>
-                    <a href="" class="project" target="_blank"data-type="back-end">
-                        <img src="./images/포플1.png" alt="IOT" class="project__img">
-                    <div class="project__description">
-                        <h3>여기어때 클론코딩</h3>
-                        <span>Clone coding 아주 비슷함</span>
-                    </div>
-                    </a>
-                    <a href="" class="project" target="_blank"data-type="mobile">
-                        <img src="./images/포플1.png" alt="IOT" class="project__img">
-                    <div class="project__description">
-                        <h3>야놀자 클론코딩</h3>
-                        <span>Clone coding 아주 비슷함</span>
-                    </div>
-                    </a>
-                    <a href="" class="project" target="_blank"data-type="mobile">
-                        <img src="./images/포플1.png" alt="IOT" class="project__img">
-                    <div class="project__description">
-                        <h3>네이버 클론코딩</h3>
-                        <span>Clone coding 아주 비슷함</span>
-                    </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-    <!-- Projects end -->
-
-    <!-- Recomend start -->
-    <section id="testimonials" class ="section" >
-        <div class="section__container">
-            <h1 style="padding-top: 25px;">Recomend</h1>
-            <h3>이분들은 저를 보고 짱이라고 했어요!</h3>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <img src="./images/스티브.jpg" alt="" class ="testimonial__avatar">
-                    <div class="testimonial__speech-bubble">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore modi asperiores officiis distinctio ad deserunt facilis error dolorum delectus maxime ipsum, repellat impedit nihil, quidem doloribus. Rem possimus sapiente accusantium.
-                    </p>
-                    <p class="name"><a href="">스티브잡스</a> / apple</p>
-                </div>
-            </div>
-        </div>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <img src="./images/스티브.jpg" alt="" class ="testimonial__avatar">
-                    <div class="testimonial__speech-bubble">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore modi asperiores officiis distinctio ad deserunt facilis error dolorum delectus maxime ipsum, repellat impedit nihil, quidem doloribus. Rem possimus sapiente accusantium.
-                    </p>
-                    <p class="name"><a href="">이재용</a> / samsung</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-<!-- Recomend end -->
-
-<!-- contact -->
-<section id="contact" class="section">
-    <h1 class="contact__title">연락주세요</h1>
-    <h2 class="contact__email">gnstjq2772@naver.com</h2>
-    <div class="contact__links">
-        <a href="https://github.com/hunseop2772" target="_blank">
-        <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://hunseop2772.tistory.com/" target="_blank">
-            <i class="fa-solid fa-t"></i>
-            </a>
-    </div>
-    <p class="contact__rights">
-        2022 song - All right reserved
-    </p>
-</section>
-<!-- contact end-->
-<button class = "arrow-up">
-    <i class ="fa-solid  fa-arrow-up"></i>
-</button>
-
-</body>
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
